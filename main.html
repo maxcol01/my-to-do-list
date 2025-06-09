@@ -7,8 +7,49 @@
     <title>To do list</title>
 </head>
 <body>
+    <header>
+    <!--Toggle Dark mode-->
+        <div class="dark-mode-toggle">
+            <span>Dark mode</span>
+            <i class="fa-solid fa-toggle-off"></i>
+        </div>
+    </header>
     <main>
-        <h1>Hello, World !</h1>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>today</td>
+                        <td>Eat</td>
+                        <td>TBC</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>tomorrow</td>
+                        <td>Eat</td>
+                        <td>TBC</td>
+                    </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="add-task">
+            <div class="desc-task">
+                <label for="desc">Describe task</label>
+                <input type="text" name="task" id="desc">
+            </div>
+            <div id="add-task-btn">
+                <button type="submit">Add</button>
+            </div>
+        </div>
     </main>
 
 

@@ -5,9 +5,33 @@
     --background-color-body: whitesmoke;
 }
 
+.dark-mode {
+
+}
+
 body {
     background-color: var(--background-color-body);
     font-family: Robot, sans-serif;
     margin:0;
     padding: 0;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+/* Header (Dark Mode toggle) */
+
+header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+}
+
+.dark-mode-toggle {
+    padding-right: 20px;
+}
+
+/* Main container*/
+
+main {
+    border: 1px solid green;
 }
