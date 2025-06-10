@@ -53,10 +53,25 @@ header {
 
 main {
     border: 1px solid green;
+    height: 80vh;
 }
 
 
 /* Footer */
 
+footer {
+    margin-top: 20px;
+    border: 1px solid maroon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo-footer {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 1.5rem;
+    }
+}
 
 /* MEDIA QUERIES ------------------------- */
