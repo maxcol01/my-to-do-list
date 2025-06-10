@@ -1,3 +1,8 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-    console.log("Content loader")
+    
+    
+    // Date on the footer
+    const dateSpan = document.getElementById("date-footer");
+    let date = new Date();
+    dateSpan.innerText = String(date.getFullYear());
 })
