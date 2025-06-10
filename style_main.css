@@ -28,12 +28,6 @@ header {
 
 .dark-mode-toggle {
     padding-right: 20px;
-    span {
-    color:red;
-        &:hover {
-            color: blue;
-        }
-    }
 }
 
 
