@@ -49,29 +49,45 @@ header {
 }
 
 
-/* Main container*/
+/* MAIN CONTAINER -----------------------*/
 
-main {
-    border: 1px solid green;
-    height: 80vh;
-}
-
-
-/* Footer */
-
-footer {
-    margin-top: 20px;
-    border: 1px solid maroon;
+.main-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    .logo-footer {
-        margin-top: 10px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    min-height: 90vh;
+    /* Main content */
+
+    main {
+        border: 1px solid green;
+        height: 80vh;
         display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        gap: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+
+    /* Footer */
+
+    footer {
+        border: 1px solid maroon;
+        text-align: center;
+
+        .text-footer, .logo-footer {
+            padding: 5px;
+        }
+
+        @media screen and (max-width: 834px) {
+            .text-footer,
+            .logo-footer {
+                padding: 2px;
+            }
+        }
+    }
+
 }
+
+
 
 /* MEDIA QUERIES ------------------------- */
