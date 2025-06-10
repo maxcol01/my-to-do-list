@@ -14,7 +14,7 @@ body {
     font-family: Robot, sans-serif;
     margin:0;
     padding: 0;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(0.8rem, 1.3vw, 2rem);
 }
 
 /* Header (Dark Mode toggle) */
@@ -23,13 +23,30 @@ header {
     border: 1px solid red;
     display: flex;
     justify-content: end;
-    width: 100vw;
+    width: 98vw;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .dark-mode-toggle {
     padding-right: 20px;
+    i {
+        position: relative;
+        top: 2px;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 
+@media screen and (max-width: 834px) {
+    .dark-mode-toggle {
+        i {
+            position: relative;
+            top: 1px;
+        }
+    }
+}
 
 
 /* Main container*/
@@ -37,3 +54,6 @@ header {
 main {
     border: 1px solid green;
 }
+
+
+/* MEDIA QUERIES ------------------------- */
