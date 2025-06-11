@@ -84,9 +84,12 @@ header {
                 text-align: center;
                 margin: 0 auto;
                 width: 95%;
-                background-color: red;
                 tr th, tr td {
                     margin: 40px;
+                    }
+
+                tr:nth-child(even){
+                    background-color: var(--even-rows-color);
                 }
             }
         }
