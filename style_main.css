@@ -96,6 +96,15 @@ header {
                 tr:nth-child(even){
                     background-color: var(--even-rows-color);
                 }
+
+                tbody tr {
+                    margin: 5px;
+                    padding: 10px;
+                    &:hover {
+                        background-color: var(--hovering-color);
+                    }
+                }
+
             }
         }
 
