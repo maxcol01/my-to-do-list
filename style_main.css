@@ -3,12 +3,12 @@
 /*CSS variables*/
 :root {
     --background-color-body: whitesmoke;
-    --color-1: #dfe3f1;
-    --color-2: #e8e9ed;
-    --color-3: #cdd4ea;
-    --color-4: #6e7387;
-    --color-5: #bfc8e2;
-    --color-6: #f5f6f9;
+    --color-1: #f9fafd;
+    --color-2: #d2dcf9;
+    --color-3: #a7b8f4;
+    --color-4: #7f91f0; /* Narwal logo color */
+    --color-5: #bccaf7;
+    --color-6: #edf0fb;
 }
 
 .dark-mode {
