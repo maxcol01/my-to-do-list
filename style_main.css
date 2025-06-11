@@ -84,6 +84,11 @@ header {
                 text-align: center;
                 margin: 0 auto;
                 width: 95%;
+                th {
+                    color: var(--title-table);
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
                 tr th, tr td {
                     margin: 40px;
                     }
@@ -104,7 +109,6 @@ header {
                 }
             }
         }
-
     }
 
     /* Footer */
