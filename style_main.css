@@ -73,7 +73,6 @@ header {
     /* Main content */
 
     main {
-        border: 1px solid green;
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -122,6 +121,49 @@ header {
                 padding: 10px;
                 &:hover {
                    transform: scale(1.1);
+                }
+            }
+        }
+
+        form {
+            width: 70%;
+            .add-task {
+                display: flex;
+                justify-content: space-around;
+                .desc-task {
+
+                    width: 95%;
+
+                    #text {
+                        color: var(--title-table);
+                        position: relative;
+                        top: 1px;
+                    }
+
+                    input {
+                        width: 87%;
+                        height: 1.5rem;
+                        border-radius: 1.5rem;
+                        box-shadow: var(--box-shadow);
+                        border: none;
+                        padding: 10px;
+                        margin-left: 10px;
+                    }
+                }
+
+                #add-task-btn {
+                    button {
+                        border-radius: 1.5rem;
+                        border: none;
+                        background-color: var(--btn-color);
+                        padding: 6px;
+                        width: 60px;
+                        color: var(--table-bg);
+                        &:hover {
+                            cursor: pointer;
+                            background-color: var(--hovering-color);
+                        }
+                    }
                 }
             }
         }
