@@ -8,7 +8,7 @@
     --hovering-color: #a7b8f4;
     --btn-color: #7f91f0;
     --title-table: #5d82f6;
-    --text-table: black;
+    --text-table: #323232;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -104,11 +104,25 @@ header {
                 }
 
                 tbody tr {
-                    margin: 5px;
-                    padding: 10px;
+                    color: var(--text-table);
                     &:hover {
                         background-color: var(--hovering-color);
                     }
+                }
+
+                tbody tr td button {
+                    border-radius: 1.5rem;
+                    background-color: var(--btn-color);
+                    color: var(--table-bg);
+                    border: none;
+                    margin: 2px;
+                    &:hover {
+                        pointer: cursor;
+                    }
+                }
+
+                tbody tr td {
+                    padding: 8px;
                 }
 
             }
@@ -150,6 +164,7 @@ header {
                         padding: 10px;
                         margin-left: 10px;
                         outline: none;
+                        color: var(--text-table);
                     }
                 }
 
