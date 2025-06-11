@@ -137,6 +137,7 @@ header {
         }
 
         .switch-table-pg {
+            margin-bottom: 10px;
             i {
                 cursor: pointer;
                 color: var(--btn-color);
