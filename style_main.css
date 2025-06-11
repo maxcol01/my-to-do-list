@@ -6,14 +6,21 @@
     --table-bg: #f9fafd;
     --even-rows-color: #d2dcf9;
     --hovering-color: #a7b8f4;
-    --btn-color: #7f91f0; /* Narwal logo color */
+    --btn-color: #7f91f0;
     --title-table: #5d82f6;
     --text-table: black;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .dark-mode {
-
+    --background-color-body: #1a1b1f;
+    --table-bg: #2a2c33;
+    --even-rows-color: #3a3d4c;
+    --hovering-color: #5a6bc9;
+    --btn-color: #7f91f0; /* keep for contrast and consistency */
+    --title-table: #aebcff;
+    --text-table: #f0f2f5;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 body {
