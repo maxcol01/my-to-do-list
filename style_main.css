@@ -8,7 +8,7 @@
     --hovering-color: #a7b8f4;
     --btn-color: #7f91f0;
     --title-table: #5d82f6;
-    --text-table: #323232;
+    --text-table: #3c3c3c;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -95,6 +95,13 @@ header {
                     font-weight: bold;
                     font-size: 1.2rem;
                 }
+                
+                @media screen and (max-width: 834px) {
+                    th {
+                        font-size: 1rem;
+                    }
+                }
+                
                 tr th, tr td {
                     margin: 40px;
                     }
@@ -117,7 +124,8 @@ header {
                     border: none;
                     margin: 2px;
                     &:hover {
-                        pointer: cursor;
+                        cursor: pointer;
+                        background-color: var(--hovering-color);
                     }
                 }
 
