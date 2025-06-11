@@ -78,10 +78,24 @@ header {
             padding: 5px;
         }
 
+        .logo-footer {
+            border: 1px solid black;
+            width: 15%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
         @media screen and (max-width: 834px) {
             .text-footer,
             .logo-footer {
                 padding: 2px;
+            }
+        }
+        
+        @media screen and (max-width: 402px) {
+            .logo-footer {
+                width: 23%;
             }
         }
     }
