@@ -134,6 +134,13 @@ header {
                 }
 
             }
+            
+            @media screen and (max-width: 390px) {
+                table {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
         }
 
         .switch-table-pg {
