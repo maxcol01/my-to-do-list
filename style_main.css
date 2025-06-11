@@ -9,6 +9,7 @@
     --btn-color: #7f91f0; /* Narwal logo color */
     --title-table: #5d82f6;
     --text-table: black;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .dark-mode {
@@ -71,6 +72,24 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        .table {
+            background-color: var(--table-bg);
+            width: 70vw;
+            margin: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            box-shadow: var(--box-shadow);
+            table {
+                text-align: center;
+                margin: 0 auto;
+                width: 95%;
+                background-color: red;
+                tr th, tr td {
+                    margin: 40px;
+                }
+            }
+        }
 
         .switch-table-pg {
             i {
