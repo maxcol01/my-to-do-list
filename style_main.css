@@ -3,12 +3,12 @@
 /*CSS variables*/
 :root {
     --background-color-body: whitesmoke;
-    --color-1: #f9fafd;
-    --color-2: #d2dcf9;
-    --color-3: #a7b8f4;
-    --color-4: #7f91f0; /* Narwal logo color */
-    --color-5: #bccaf7;
-    --color-6: #edf0fb;
+    --table-bg: #f9fafd;
+    --even-rows-color: #d2dcf9;
+    --hovering-color: #a7b8f4;
+    --btn-color: #7f91f0; /* Narwal logo color */
+    --title-table: #5d82f6;
+    --text-table: black;
 }
 
 .dark-mode {
@@ -26,7 +26,6 @@ body {
 /* Header (Dark Mode toggle) */
 
 header {
-    border: 1px solid red;
     display: flex;
     justify-content: end;
     width: 98vw;
@@ -36,6 +35,7 @@ header {
 
 .dark-mode-toggle {
     padding-right: 20px;
+    color: var(--btn-color);
     i {
         position: relative;
         top: 2px;
@@ -71,24 +71,37 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        .switch-table-pg {
+            i {
+                cursor: pointer;
+                color: var(--btn-color);
+                padding: 10px;
+                &:hover {
+                   transform: scale(1.1);
+                }
+            }
+        }
+
     }
 
     /* Footer */
 
     footer {
-        border: 1px solid maroon;
         text-align: center;
-
+        color: var(--btn-color);
         .text-footer, .logo-footer {
             padding: 5px;
         }
 
         .logo-footer {
-            border: 1px solid black;
             width: 15%;
             margin: 0 auto;
             display: flex;
             justify-content: space-around;
+            a {
+                color: var(--btn-color);
+            }
         }
 
         @media screen and (max-width: 834px) {
