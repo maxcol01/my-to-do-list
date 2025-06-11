@@ -130,6 +130,7 @@ header {
             .add-task {
                 display: flex;
                 justify-content: space-around;
+
                 .desc-task {
 
                     width: 95%;
@@ -148,6 +149,7 @@ header {
                         border: none;
                         padding: 10px;
                         margin-left: 10px;
+                        outline: none;
                     }
                 }
 
@@ -165,6 +167,14 @@ header {
                         }
                     }
                 }
+            }
+
+            @media screen and (max-width: 834px) {
+                   .add-task {
+                       display: flex;
+                       flex-wrap: wrap;
+                       text-align: center;
+                   }
             }
         }
     }
