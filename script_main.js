@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-
-
+    // Elements to interact with 
+    const toggleDarkModeBtn = document.getElementById("toggle-btn");
+    
+    // Toggling dark mode
+    
+    toggleDarkModeBtn.addEventListener("click", () =>{
+        toggleDarkModeBtn.classList.remove("fa-toggle-off");
+        toggleDarkModeBtn.classList.add("fa-toggle-on")
+    })
+    
     // Determining the number of page for the table
     
     
