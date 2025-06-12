@@ -281,6 +281,12 @@ header {
         position: relative;
     }
 
+    .table .task-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .table tbody td::before {
         content: attr(data-label);
         font-weight: bold;
