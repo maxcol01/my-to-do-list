@@ -252,6 +252,7 @@ header {
     }
 }
 
+/* MEDIA QUERIES FOR VERTICAL PHONE ----------------- */
 
 @media screen and (max-width: 600px) {
     .table table,
@@ -268,34 +269,46 @@ header {
     }
 
     .table tbody tr {
-        margin-bottom: 1rem;
+        margin-top: 1rem;
         background-color: var(--table-bg);
         border-radius: 1rem;
         box-shadow: var(--box-shadow);
-        padding: 5px;
+        padding: 10px 0;
+        &:nth-child(even){
+            background-color: var(--table-bg)!important;
+        }
+        &:hover {
+            background-color: var(--hovering-color)!important;
+        }
     }
+
 
     .table tbody td {
         text-align: left;
-        padding: 5px;
+        padding: 0 5px;
         position: relative;
+        margin: 0;
+        line-height: 1.3;
     }
 
     .table .task-btns {
+        margin-top: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .table tbody td::before {
+    .table tbody td:before {
         content: attr(data-label);
         font-weight: bold;
         color: var(--title-table);
         display: block;
-
+        margin: 0; /* remove extra spacing */
+        padding: 0; /* ensure no padding adds height */
+        line-height: 1.2; /* prevent tall lines */
     }
 
-    .table tbody td button {
-        width: 60%;
+    .table tbody td  button {
+        width: auto;
     }
 }
