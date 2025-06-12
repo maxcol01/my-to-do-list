@@ -251,3 +251,46 @@ header {
         }
     }
 }
+
+
+@media screen and (max-width: 600px) {
+    .table table,
+    .table tbody,
+    .table th,
+    .table td,
+    .table tr {
+        display: block;
+        width: auto;
+    }
+
+
+    .table thead {
+        display: none; /* hide headers */
+    }
+
+    .table tbody tr {
+        margin-bottom: 1rem;
+        background-color: var(--table-bg);
+        border-radius: 1rem;
+        box-shadow: var(--box-shadow);
+        padding: 5px;
+    }
+
+    .table tbody td {
+        text-align: left;
+        padding: 5px;
+        position: relative;
+    }
+
+    .table tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: var(--title-table);
+        display: block;
+
+    }
+
+    .table tbody td button {
+        width: 60%;
+    }
+}
