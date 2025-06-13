@@ -153,6 +153,9 @@ header {
                    transform: scale(1.1);
                 }
             }
+            #num-pge-table {
+                color: var(--text-table);
+            }
         }
 
         form {
