@@ -5,14 +5,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
     
     // Toggling dark mode
     let isDark = localStorage.getItem("isDark");
+    console.log(isDark);
     toggleDarkModeBtn.addEventListener("click", (key, value) =>{
-        if (isDark === "false"){
+        if (isDark === "true"){
             toggleDarkModeBtn.classList.remove("fa-toggle-off");
             toggleDarkModeBtn.classList.add("fa-toggle-on")
             document.body.classList.add("dark-mode");
             themeState.innerText = "Light Mode";
             localStorage.setItem("isDark", "true");
-        } else if (isDark === "true"){
+        } else if (isDark === "false"){
             toggleDarkModeBtn.classList.remove("fa-toggle-on");
             toggleDarkModeBtn.classList.add("fa-toggle-off")
             document.body.classList.remove("dark-mode");
