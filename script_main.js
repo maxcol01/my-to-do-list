@@ -4,18 +4,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const themeState = document.getElementById("theme-state");
     
     // Toggling dark mode
-    
-    toggleDarkModeBtn.addEventListener("click", () =>{
-        if (toggleDarkModeBtn.classList.contains("fa-toggle-off")){
+    let isDark = localStorage.getItem("isDark");
+    toggleDarkModeBtn.addEventListener("click", (key, value) =>{
+        if (isDark === "false"){
             toggleDarkModeBtn.classList.remove("fa-toggle-off");
             toggleDarkModeBtn.classList.add("fa-toggle-on")
             document.body.classList.add("dark-mode");
             themeState.innerText = "Light Mode";
-        } else {
+            localStorage.setItem("isDark", "true");
+        } else if (isDark === "true"){
             toggleDarkModeBtn.classList.remove("fa-toggle-on");
             toggleDarkModeBtn.classList.add("fa-toggle-off")
             document.body.classList.remove("dark-mode");
-            themeState.innerText = "Dark Mode"; 
+            themeState.innerText = "Dark Mode";
+            localStorage.setItem("isDark", "false");
         }
 
     });
