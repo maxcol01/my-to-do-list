@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*CSS variables*/
+:root {
+    --background-color-body: whitesmoke;
+    --table-bg: #f9fafd;
+    --even-rows-color: #d2dcf9;
+    --hovering-color: #a7b8f4;
+    --btn-color: #7f91f0;
+    --title-table: #5d82f6;
+    --text-table: #3c3c3c;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode {
+    --background-color-body: #1a1b1f;
+    --table-bg: #2a2c33;
+    --even-rows-color: #3a3d4c;
+    --hovering-color: #5a6bc9;
+    --btn-color: #7f91f0; /* keep for contrast and consistency */
+    --title-table: #aebcff;
+    --text-table: #f0f2f5;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+
+body {
+    background-color: var(--background-color-body);
+    font-family: Robot, sans-serif;
+    margin:0;
+    padding: 0;
+    font-size: clamp(0.8rem, 1.3vw, 2rem);
+}
+
+/* Header (Dark Mode toggle) */
+
+header {
+    display: flex;
+    justify-content: end;
+    width: 98vw;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.dark-mode-toggle {
+    padding-right: 20px;
+    color: var(--btn-color);
+    i {
+        position: relative;
+        top: 2px;
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .dark-mode-toggle {
+        i {
+            position: relative;
+            top: 1px;
+        }
+    }
+}
