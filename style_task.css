@@ -82,19 +82,12 @@ header {
             color: var(--text-table);
         }
         .completion {
-            border: 1px solid maroon;
             display: flex;
             i {
-                position: relative;
-                top: 1.3rem;
-                left: 0.8rem;
+                display: flex;
+                align-items: center;
+                margin-left: 1rem;
                 font-size: 2rem;
-            }
-            @media screen and (max-width: 834px) {
-                i {
-                    top: 1rem;
-                    font-size: 1rem;
-                }
             }
         }
     }
