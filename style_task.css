@@ -72,10 +72,33 @@ header {
     padding-bottom: 10px;
     min-height: 90vh;
 
-    h2 {
-        color: var(--text-table);
-        padding-left: 1.5rem;
+    .task-name {
+        display: flex;
+        border: 1px solid red;
+        flex-direction: column;
+        justify-content: center;
+        h2, .completion {
+            padding-left: 1.5rem;
+            color: var(--text-table);
+        }
+        .completion {
+            border: 1px solid maroon;
+            display: flex;
+            i {
+                position: relative;
+                top: 1.3rem;
+                left: 0.8rem;
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 834px) {
+                i {
+                    top: 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
     }
+
 
     /* Footer */
 
