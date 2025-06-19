@@ -99,6 +99,20 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        th {
+            color: var(--text-table);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        tr th, tr td {
+            margin: 40px;
+        }
+
+        tr:nth-child(even){
+            background-color: var(--even-rows-color);
+        }
     }
 
 
