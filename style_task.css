@@ -113,6 +113,10 @@ header {
         tr:nth-child(even){
             background-color: var(--even-rows-color);
         }
+
+
+
+
     }
 
 
